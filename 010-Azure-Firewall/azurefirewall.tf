@@ -1,7 +1,7 @@
 # Define virtual network
 resource "azurerm_virtual_network" "vnet" {
   name                = var.vnetname  # Name of the virtual network
-  address_space       = ["10.0.0.0/16"]  # Address space for the virtual network
+  address_space       = var.vnetrange  # Address space for the virtual network
   location            = var.location  # Location of the virtual network
   resource_group_name = var.resource_group_name  # Resource group for the virtual network
 }
@@ -11,7 +11,7 @@ resource "azurerm_subnet" "firewallsubnet" {
   name                 = var.fname  # Name of the subnet
   resource_group_name  = var.resource_group_name  # Resource group for the subnet
   virtual_network_name = azurerm_virtual_network.vnet.name  # Name of the virtual network where the subnet is located
-  address_prefixes     = ["10.0.2.0/24"]  # Address prefix for the subnet
+  address_prefixes     = var.firewallsubnetrange  # Address prefix for the subnet
 }
 
 # Define public IP address
