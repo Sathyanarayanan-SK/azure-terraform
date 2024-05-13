@@ -1,33 +1,34 @@
+# Variables for Azure Firewall configuration
 variable "firewall_name" {
-    description = "name of firewall"
-    default = "testFW"
+    description = "Name of the Azure Firewall"  # Description of the variable
+    default = "testFW"  # Default value for the variable
 }
 
 variable "location" {
-    description = "name of location"
-    default = "Central india"
-  
+    description = "Location for Azure resources"  # Description of the variable
+    default = "Central India"  # Default value for the variable
 }
-variable "resource_group_name" {
-  default = "Terraform-rg"
-}
-variable "sku_name" {
-    default = "AZFW_VNet"
-  
-}
-variable "sku_tier" {
-    default = "Standard"
-  
-}
-variable "vnetname" {
-    default = "vnettest"
-  
-}
-variable "fname" {
-    default = "AzureFirewallSubnet"
-  
-}
-variable "pubipname" {
-    default = "firewallip"
 
+variable "resource_group_name" {
+    default = "Terraform-rg"  # Default value for the variable
+}
+
+variable "sku_name" {
+    default = "AZFW_VNet"  # Default value for the variable
+}
+
+variable "sku_tier" {
+    default = "Standard"  # Default value for the variable
+}
+
+variable "vnetname" {
+    default = "vnettest"  # Default value for the variable
+}
+
+variable "fname" {
+    default = "AzureFirewallSubnet"  # Default value for the variable
+}
+
+variable "pubipname" {
+    default = "firewallip"  # Default value for the variable
 }
