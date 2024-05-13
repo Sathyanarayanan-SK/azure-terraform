@@ -32,3 +32,9 @@ variable "fname" {
 variable "pubipname" {
     default = "firewallip"  # Default value for the variable
 }
+variable "vnetrange" {
+    defaults = ["10.0.0.0/16"]
+}
+variable "firewallsubnetrange" {
+    defaults = ["10.0.2.0/16"]
+}
