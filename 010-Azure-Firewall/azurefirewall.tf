@@ -29,7 +29,7 @@ resource "azurerm_firewall" "firewalltest" {
 
   ip_configuration {
     name                 = "configuration"
-    subnet_id            = azurerm_subnet.firewallsubnet.id
+    subnet_id            = azurerm_subnet.firewalltest.id
     public_ip_address_id = azurerm_public_ip.EIP.id
   }
 }
