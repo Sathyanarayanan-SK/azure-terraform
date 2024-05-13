@@ -9,7 +9,7 @@ variable "location" {
   
 }
 variable "resource_group_name" {
-  default = "Terraform-tf"
+  default = "Terraform-rg"
 }
 variable "sku_name" {
     default = "AZFW_VNet"
