@@ -12,7 +12,7 @@ variable "resource_group_name" {
   default = "Terraform-tf"
 }
 variable "sku_name" {
-    default = "ZFW_VNet"
+    default = "AZFW_VNet"
   
 }
 variable "sku_tier" {
