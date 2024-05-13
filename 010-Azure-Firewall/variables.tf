@@ -24,7 +24,7 @@ variable "vnetname" {
   
 }
 variable "fname" {
-    default = "firewalltest"
+    default = "AzureFirewallSubnet"
   
 }
 variable "pubipname" {
